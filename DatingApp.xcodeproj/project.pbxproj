@@ -14,6 +14,7 @@
 		F53230AC2CB09F5600CE8B11 /* DatingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230AB2CB09F5600CE8B11 /* DatingAppTests.swift */; };
 		F53230B62CB09F5600CE8B11 /* DatingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230B52CB09F5600CE8B11 /* DatingAppUITests.swift */; };
 		F53230B82CB09F5600CE8B11 /* DatingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230B72CB09F5600CE8B11 /* DatingAppUITestsLaunchTests.swift */; };
+		F53230CF2CB0A56C00CE8B11 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230CE2CB0A56C00CE8B11 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F53230B12CB09F5600CE8B11 /* DatingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53230B52CB09F5600CE8B11 /* DatingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppUITests.swift; sourceTree = "<group>"; };
 		F53230B72CB09F5600CE8B11 /* DatingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F53230CE2CB0A56C00CE8B11 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,11 @@
 		F53230992CB09F5400CE8B11 /* DatingApp */ = {
 			isa = PBXGroup;
 			children = (
-				F532309A2CB09F5400CE8B11 /* DatingAppApp.swift */,
+				F53230C82CB0A44700CE8B11 /* App */,
+				F53230C72CB0A44300CE8B11 /* Core */,
+				F53230C62CB0A43F00CE8B11 /* Extensions */,
+				F53230C52CB0A43C00CE8B11 /* Shared */,
+				F53230C42CB0A43800CE8B11 /* Utils */,
 				F532309C2CB09F5400CE8B11 /* ContentView.swift */,
 				F532309E2CB09F5600CE8B11 /* Assets.xcassets */,
 				F53230A02CB09F5600CE8B11 /* Preview Content */,
@@ -125,6 +131,83 @@
 				F53230B72CB09F5600CE8B11 /* DatingAppUITestsLaunchTests.swift */,
 			);
 			path = DatingAppUITests;
+			sourceTree = "<group>";
+		};
+		F53230C42CB0A43800CE8B11 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F53230C52CB0A43C00CE8B11 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F53230C62CB0A43F00CE8B11 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F53230C72CB0A44300CE8B11 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F53230CA2CB0A4D300CE8B11 /* Cards */,
+				F53230CD2CB0A4F700CE8B11 /* Messaging */,
+				F53230CB2CB0A4DC00CE8B11 /* Profile */,
+				F53230CC2CB0A4E700CE8B11 /* Search */,
+				F53230C92CB0A4C600CE8B11 /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F53230C82CB0A44700CE8B11 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F532309A2CB09F5400CE8B11 /* DatingAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F53230C92CB0A4C600CE8B11 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F53230CE2CB0A56C00CE8B11 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F53230CA2CB0A4D300CE8B11 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		F53230CB2CB0A4DC00CE8B11 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F53230CC2CB0A4E700CE8B11 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F53230CD2CB0A4F700CE8B11 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messaging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +342,7 @@
 			files = (
 				F532309D2CB09F5400CE8B11 /* ContentView.swift in Sources */,
 				F532309B2CB09F5400CE8B11 /* DatingAppApp.swift in Sources */,
+				F53230CF2CB0A56C00CE8B11 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
