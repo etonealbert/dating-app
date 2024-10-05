@@ -19,7 +19,9 @@ struct MainTabView: View {
                 .tag(1)
             
             Text("Inbox View")
-                .tabItem{Image(systemName: "bubble")}
+                .tabItem{
+                    Image(systemName: "bubble")
+                    .renderingMode(.template)}
                 .tag(2)
             
             Text("Profile View")
