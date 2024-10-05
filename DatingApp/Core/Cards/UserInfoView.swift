@@ -32,11 +32,11 @@ struct UserInfoView: View {
                 .font(.subheadline)
                 .lineLimit(2)
         }
-        .foregroundColor(.white)
+        .foregroundStyle(.white)
         .padding()
         .background(
             LinearGradient(colors: [.clear, .black], startPoint: .top, endPoint: .bottom)
-        )
+               )
         
     }
 }

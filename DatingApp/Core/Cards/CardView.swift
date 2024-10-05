@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct CardView: View {
-    
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            Image(.megan3)
-                .resizable()
-                .scaledToFill()
+            GeometryReader { geometry in
+                ZStack(alignment: .top) {
+                    Image(.megan3)
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                        .ignoresSafeArea()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+
+                    SwipeActionIndicatorView()
+                }
+            }
+            .ignoresSafeArea()
             
-            UserInfoView()
-                .padding(.horizontal)
+            
+           UserInfoView()
+                    
         }
+        .ignoresSafeArea()
         .frame(width: cardWidth, height: cardHeigh)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffset)
@@ -28,18 +39,17 @@ struct CardView: View {
         .animation(.snappy, value: degrees)
         .gesture(
             DragGesture()
-                .onChanged({ value in
-                        xOffset = value.translation.width
-                        degrees = Double(value.translation.width / 25)
-                    
-                }).onEnded({ value in
-                    onDragEnded(value)
-                })
+                .onChanged(onDragChanged)
+                .onEnded(onDragEnded)
         )
     }
 }
 
 private extension CardView {
+    func onDragChanged(_ value: _ChangedGesture<DragGesture>.Value) {
+        xOffset = value.translation.width
+        degrees = Double(value.translation.width / 25)
+    }
     func onDragEnded(_ value: _ChangedGesture<DragGesture>.Value) {
         let width = value.translation.width
         

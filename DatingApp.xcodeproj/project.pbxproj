@@ -17,6 +17,7 @@
 		F53230CF2CB0A56C00CE8B11 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230CE2CB0A56C00CE8B11 /* MainTabView.swift */; };
 		F53230D12CB196C300CE8B11 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230D02CB196C300CE8B11 /* CardView.swift */; };
 		F53230D32CB19B9D00CE8B11 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230D22CB19B9D00CE8B11 /* UserInfoView.swift */; };
+		F53230D62CB1E79000CE8B11 /* SwipeActionIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53230D52CB1E79000CE8B11 /* SwipeActionIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F53230CE2CB0A56C00CE8B11 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F53230D02CB196C300CE8B11 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F53230D22CB19B9D00CE8B11 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		F53230D52CB1E79000CE8B11 /* SwipeActionIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				F53230D02CB196C300CE8B11 /* CardView.swift */,
 				F53230D22CB19B9D00CE8B11 /* UserInfoView.swift */,
+				F53230D52CB1E79000CE8B11 /* SwipeActionIndicatorView.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				F53230932CB09F5400CE8B11 /* Sources */,
 				F53230942CB09F5400CE8B11 /* Frameworks */,
 				F53230952CB09F5400CE8B11 /* Resources */,
+				F53230D42CB1E26700CE8B11 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -341,12 +345,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F53230D42CB1E26700CE8B11 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F53230932CB09F5400CE8B11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F532309D2CB09F5400CE8B11 /* ContentView.swift in Sources */,
+				F53230D62CB1E79000CE8B11 /* SwipeActionIndicatorView.swift in Sources */,
 				F532309B2CB09F5400CE8B11 /* DatingAppApp.swift in Sources */,
 				F53230D12CB196C300CE8B11 /* CardView.swift in Sources */,
 				F53230CF2CB0A56C00CE8B11 /* MainTabView.swift in Sources */,
