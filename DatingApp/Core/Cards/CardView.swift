@@ -27,7 +27,6 @@ struct CardView: View {
             }
             .ignoresSafeArea()
             
-            
            UserInfoView()
                     
         }
